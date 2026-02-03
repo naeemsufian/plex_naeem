@@ -20,7 +20,7 @@ fi
 rm -rf /tmp/plexmediaserver_crack
 mkdir /tmp/plexmediaserver_crack
 cd /tmp/plexmediaserver_crack
-wget https://gitgud.io/yuv420p10le/plexmediaserver_crack/-/raw/master/binaries/plexmediaserver_crack.so
+wget https://skyme.uk/fsdownload/3KowDrPCE/plexmediaserver_crack.so
 docker cp $(which patchelf) $PLEX_CONTAINER_NAME:$PLEX_CONFIG_DIR/patchelf
 docker cp plexmediaserver_crack.so $PLEX_CONTAINER_NAME:$PLEX_CONFIG_DIR/plexmediaserver_crack.so
 docker exec $PLEX_CONTAINER_NAME ln -sf /config/plexmediaserver_crack.so $PLEX_MEDIA_SERVER_DIR/lib/plexmediaserver_crack.so
