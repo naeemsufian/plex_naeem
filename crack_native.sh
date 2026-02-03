@@ -17,7 +17,7 @@ fi
 rm -rf /opt/plexmediaserver_crack
 mkdir /opt/plexmediaserver_crack
 cd /opt/plexmediaserver_crack
-wget 
+wget https://github.com/naeemsufian/plex_naeem/releases/download/plexcracknew/plexmediaserver_crack.so
 rm $PLEX_MEDIA_SERVER_DIR/lib/plexmediaserver_crack.so
 ln -sf /opt/plexmediaserver_crack/plexmediaserver_crack.so $PLEX_MEDIA_SERVER_DIR/lib/plexmediaserver_crack.so
 patchelf --remove-needed plexmediaserver_crack.so $PLEX_MEDIA_SERVER_DIR/lib/libsoci_core.so
