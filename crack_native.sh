@@ -17,7 +17,7 @@ fi
 rm -rf /opt/plexmediaserver_crack
 mkdir /opt/plexmediaserver_crack
 cd /opt/plexmediaserver_crack
-wget https://gitgud.io/yuv420p10le/plexmediaserver_crack/-/raw/master/binaries/plexmediaserver_crack.so
+wget 
 rm $PLEX_MEDIA_SERVER_DIR/lib/plexmediaserver_crack.so
 ln -sf /opt/plexmediaserver_crack/plexmediaserver_crack.so $PLEX_MEDIA_SERVER_DIR/lib/plexmediaserver_crack.so
 patchelf --remove-needed plexmediaserver_crack.so $PLEX_MEDIA_SERVER_DIR/lib/libsoci_core.so
